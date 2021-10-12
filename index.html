@@ -10,17 +10,17 @@
         <link rel="stylesheet" href="style.css" />
         <script src="https://kit.fontawesome.com/0a06104276.js" crossorigin="anonymous"></script>
         <title>Booki</title>
+
     </head>
     <body>
         <!--header-->
-        <header>
-            <nav>
-                <img src="./images/logo/Booki@3x.png" alt="logo">
-                <ul>
-                    <li><a href="#Hosting"></a>Hébergements</li>
-                    <li><a href="#Activities"></a>Activités</li>
-                </ul>
+        <header id="header">
+            <img id="img_header" src="./images/logo/Booki@3x.png" alt="logo">
+            <nav class="header_nav">
+                <a class="header_nav_link" href="#hosting" data-active="true">Hébergement</a>
+                <a class="header_nav_link" href="#activity" data-active="false">Activités</a>
             </nav>
+
         </header>
         <!--main-->
         <main>
@@ -28,30 +28,68 @@
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
                 <form method="post" action="traitement.php">
-                    <p>
-                        <i class="fas fa-map-marker-alt fa-lg"></i>
-                        <input type="text" name="search" id="search_bar" placeholder="Marseille, France" />
-                        <button id="search_button"type="button">Rechercher</button>
-                    </p>
+                <span id=icon_title><i class="fas fa-map-marker-alt fa-lg"></i></span>
+                <input id="search_bar" type="text" name="search" id="search_bar" placeholder="Marseille, France" />
+                <button id="search_button"type="button">Rechercher</button>  
                 </form>
             </div>
             <div id="filter">
-                <p>Filtres</p>
-                <i class="fas fa-money-bill-wave"></i><button>Économie</button>
-                <i class="fas fa-child"></i><button>Familial</button>
-                <i class="fas fa-heart"></i><button>Romantique</button>
-                <i class="fas fa-dog"></i><button>Animaux autorisés</button>
+                <h2>Filtres</h2>
+                
+                <div class="search_filter">
+                    <div class="search_filter_icon_wrap"><i class="fas fa-money-bill-wave"></i></div><span class="filter_titles">Économie</span>
+                </div>    
+                
+                <div class="search_filter">
+                    <div class="search_filter_icon_wrap"><i class="fas fa-child"></i></div><span class="filter_titles">Familial</span>
+                </div>
+                
+                <div class="search_filter">
+                    <div class="search_filter_icon_wrap"><i class="fas fa-heart"></i></div><span class="filter_titles">Romantique</span>
+                </div>
+                
+                <div class="search_filter">
+                    <div class="search_filter_icon_wrap"><i class="fas fa-dog"></i></div><span class="filter_titles">Animaux autorisés</span>
+                </div>
             </div>
-            <div id="information">
-            <i class="fas fa-info-circle"></i><p>Plus de 500 logements sont disponibles dans cette ville</p>
+            
+            <div class="search_result">
+                <div class="search_result_wrap_icon"><i class="fas fa-info-circle"></i><p class="search_result_information"></div></p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
-            <section>
-                <h2 id="Hosting">Hébergements à Marseille</h2>
-                <p>... (beaucoup de texte) ...</p><p>... (beaucoup de texte) ...</p><p>... (beaucoup de texte) ...</p><p>... (beaucoup de texte) ...</p><p>... (beaucoup de texte) ...</p><p>... (beaucoup de texte) ...</p><p>... (beaucoup de texte) ...</p><p>... (beaucoup de texte) ...</p><p>... (beaucoup de texte) ...</p><p>... (beaucoup de texte) ...</p><p>... (beaucoup de texte) ...</p><p>... (beaucoup de texte) ...</p><p>... (beaucoup de texte) ...</p><p>... (beaucoup de texte) ...</p><p>... (beaucoup de texte) ...</p><p>... (beaucoup de texte) ...</p><p>... (beaucoup de texte) ...</p><p>... (beaucoup de texte) ...</p><p>... (beaucoup de texte) ...</p>
 
+            <section class="hosting" id="hosting">
+                <div class="hosting_main"></div>
+                    <header class="hosting_main_header">
+                        <h2 class="hosting_main_header_title">Hébergements à Marseille</h2>
+                    </header>    
+                        <article class="hosting_main">
+                            <a href="#" >
+                                <figure class="hosting_main_card_figure">
+                                    <img class="hosting_main_card_figure_img"src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre avec un lit superposé avec une fenetre vu sur la ville" >
+                                    <figcaption class="hosting_main_card_figure_caption">
+                                        <h3 class="hosting_main_card_figure_fig">Auberge la Cannebière</h3>
+                                    </figcaption>
+                                </figure> 
+                                <p class="hosting_main_card_desc">Nuit à partir de
+                                <strong class="hosting_main_card_desc_price">25 €</strong>
+                                </p>
+                                <div class=hosting_main_card_grade>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </div>
+                            </a>    
+                        </article>
 
+                </div>
             </section>
 
-        </main>    
+        </main>
+        <!--footer-->
+        <footer>
+
+        </footer>   
     </body>
 </html>
