@@ -61,9 +61,11 @@
         <!--hosting-->
             
             <section class="hosting" id="hosting">
-                <h2 class="hosting_main_title">Hébergements à Marseille</h2>
                 <div class="hosting_main">
-                        <article class="hosting_main_card">
+                    <h2 class="hosting_main_title">Hébergements à Marseille</h2>
+                        
+                <div class="hosting_main_container">    
+                    <article class="hosting_main_card">
                             <a href="#" >
                                 <figure class="hosting_main_card_figure">
                                     <img class="hosting_main_card_figure_img" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Chambre avec un lit superposé avec une fenetre vu sur la ville" >
@@ -183,15 +185,15 @@
                                 </div>
                             </a>    
                         </article>
+                    </div>
+                    <a class="hosting_main_viewmore" href="#">Afficher plus</a>
+                    </div>
+                          
 
-                        </div>
-                        
-            <a class="hosting_main_viewmore" href="#">Afficher plus</a>    
+              
             <!--popular-->
             <aside class="hosting_popular">
-                <h2 class="hosting_popular_title">
-                    "Les plus populaires" <i class="fas fa-chart-line"></i>
-                </h2>
+                <h2 class="hosting_popular_title">"Les plus populaires" <i class="fas fa-chart-line"></i></h2>
                 <article class="hosting_popular_card">
                     <a class="hosting_popular_wrap_content" href="#">
                         <div class="hosting_popular_wrap_content_wrap_img">
@@ -269,48 +271,79 @@
                 </article>
             </aside>    
             </section>
+
+            <!--activity-->
             <section class="activity" id="activity">
                 <h2 class="activity_title">Activités à Marseille</h2>
                 <a href="#" class="activity_card activity_card_1">
                     <div class="activity_card_wrap">
-                        <img class="activity_card_img" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port">
-                        <h3 class="activity_card_title">Vieux Port</h3>
+                        <img class="activity_card_wrap_img" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux port">
                     </div>
+                    <h3 class="activity_card_title">Vieux Port</h3>
                 </a>    
                 <div class="activity_card activity_card_2">
                     <a href="#" class="activity_card_wrap">
-                        <img class="activity_card_img" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="vieux port">
-                        <h3 class="activity_card_title">Fort de Pomègues</h3>
+                        <img class="activity_card_wrap_img" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="vieux port">
+                        
                     </a>
+                    <h3 class="activity_card_title">Fort de Pomègues</h3>
                 </div>    
                 <div class="activity_card activity_card_3">
                     <a href="#" class="activity_card_wrap">
-                        <img class="activity_card_img" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="vieux port">
-                        <h3 class="activity_card_title">Parc National des Calanques</h3>
+                        <img class="activity_card_wrap_img" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="vieux port">
+                        
                     </a>
+                    <h3 class="activity_card_title">Parc National des Calanques</h3>
                 </div>
                 <div class="activity_card activity_card_4">
                     <a href="#" class="activity_card_wrap">
-                        <img class="activity_card_img" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="vieux port">
-                        <h3 class="activity_card_title">Notre-Dame-de-la-Garde</h3>
+                        <img class="activity_card_wrap_img" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="vieux port">
+                        
                     </a>
+                    <h3 class="activity_card_title">Notre-Dame-de-la-Garde</h3>
                 </div>
                 <div class="activity_card activity_card_5">
                     <a href="#" class="activity_card_wrap">
-                        <img class="activity_card_img" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="vieux port">
-                        <h3 class="activity_card_title">Ile de frioul</h3>
+                        <img class="activity_card_wrap_img" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="vieux port">
+                        
                     </a>
+                    <h3 class="activity_card_title">Ile de frioul</h3>
                 </div>
                 <div class="activity_card activity_card_6">
                     <a href="#" class="activity_card_wrap">
-                        <img class="activity_card_img" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="vieux port">
-                        <h3 class="activity_card_title">Parc Longchamp</h3>
+                        <img class="activity_card_wrap_img" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="vieux port">
+                        
                     </a>
+                    <h3 class="activity_card_title">Parc Longchamp</h3>
                 </div>    
             </section>
         </main>
         <!--footer-->
         <footer>
+            <div class="bloc footer_container">
+                <div class="bloc footer_about">
+                    <h3>A propos</h3>
+                    <ul class="about_list">
+                        <li><a href="#">fonctionnement du site</a></li>
+                        <li><a href="#">Condition générales de ventes</a></li>
+                        <li><a href="#">Données et confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="bloc footer_hosting">
+                    <h3>Nos Hébergements</h3>
+                    <ul class="hosting_list">
+                        <li><a href="#">Charte qualité</a></li>
+                        <li><a href="#">Soumettre votre hotel</a></li>
+                    </ul>
+                </div>
+                <div class="bloc footer_help">
+                    <h3>Assitance</h3>
+                    <ul class="help_list">
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Nous contacter</a></li>
+                    </ul>
+                </div>
+            </div>
 
         </footer>   
     </body>
