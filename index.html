@@ -24,34 +24,41 @@
         </header>
         <!--main-->
         <main>
+        <!--title-->    
             <div id="title">
-        <!--title-->
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
-                <form method="post" action="traitement.php">
-                <span id=icon_title><i class="fas fa-map-marker-alt fa-lg"></i></span>
-                <input id="search_bar" type="text" name="search" placeholder="Marseille, France" />
-                <button id="search_button"type="button">Rechercher</button>  
-                </form>
+                <div class="search">
+                    <div class="search_icon">
+                        <i class="fas fa-map-marker-alt fa-lg"></i>
+                    </div>
+                    <input class="search_bar" type="text" name="search" placeholder="Marseille, France" />
+                    <div class="search_button">
+                        <span class="search_button_mobile_none">Rechercher</span>
+                        <span class="search_button_desktop_none"><i class="fas fa-search"></i></span> 
+                    </div>
+                </div> 
             </div>
-            <div id="filter">
+            <div class="filter">
                 <h2>Filtres</h2>
-                
-                <div class="search_filter">
-                    <div class="search_filter_icon_wrap"><i class="fas fa-money-bill-wave"></i></div><span class="filter_titles">Économie</span>
-                </div>    
-                
-                <div class="search_filter">
-                    <div class="search_filter_icon_wrap"><i class="fas fa-child"></i></div><span class="filter_titles">Familial</span>
+                <div class="search_filter_wrap">
+                    <div class="search_filter">
+                        <i class="fas fa-money-bill-wave search_filter_icon"></i><span class="filter_titles">Économie</span>
+                    </div>    
+                    
+                    <div class="search_filter">
+                        <i class="fas fa-child search_filter_icon"></i><span class="filter_titles">Familial</span>
+                    </div>
+                    
+                    <div class="search_filter">
+                        <i class="fas fa-heart search_filter_icon"></i><span class="filter_titles">Romantique</span>
+                    </div>
+                    
+                    <div class="search_filter">
+                        <i class="fas fa-dog search_filter_icon"></i><span class="filter_titles">Animaux autorisés</span>
+                    </div>
                 </div>
                 
-                <div class="search_filter">
-                    <div class="search_filter_icon_wrap"><i class="fas fa-heart"></i></div><span class="filter_titles">Romantique</span>
-                </div>
-                
-                <div class="search_filter">
-                    <div class="search_filter_icon_wrap"><i class="fas fa-dog"></i></div><span class="filter_titles">Animaux autorisés</span>
-                </div>
             </div>
             
             <div class="search_result">
