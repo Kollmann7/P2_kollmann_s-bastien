@@ -542,6 +542,7 @@ a:visited{
 }
 
 /*media queries activity*/
+
 @media screen and (max-width: 768px){
     .activity_container{
         flex-direction: column;
