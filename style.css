@@ -14,10 +14,9 @@ main {
 
 a{
     text-decoration: none;
+    color:black;
 }
-a:visited{
-    color:transparent;
-}
+
 /*header*/
 
 .header{
@@ -297,7 +296,7 @@ a:visited{
 .card_hosting{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 30%;
     height: 230px;
